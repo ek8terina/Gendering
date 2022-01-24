@@ -8,7 +8,17 @@ In order to run, you will need the following:
 4. Genderize.io Key (and credits)
 
 ## Quickstart: How to Run
-...
+1. Clone or download this repo to local machine
+2. Replace ".gender_this.csv" with desired data
+    1. Follow the format used in that csv including file name and column names
+3. Open terminal at the /Gendering/ folder
+4. Run the following (replace <API_KEY>):
+    1. `RScript Gendering_clean.R`
+    2. `python Use_NamSor_GenderAPI.py "<GENDER_API_KEY>" "<NAM_SOR_API_KEY"`
+        1. Make sure you have required libraries installed (see requirements.txt)
+        2. Recommended: Install and run in a virtual environment
+    2. `RScript Gendering_run.R "<GENDERIZE_API_KEY>"`
+5. Hooray! This should have generated final.csv, the resulting gendering.
 
 ## File Details
 ...
