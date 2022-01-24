@@ -14,11 +14,14 @@ In order to run, you will need the following:
     2. Use the name "gender_this.csv"!
 3. Open terminal at the /Gendering/ folder
 4. Run the following (replace <API_KEY>):
-    1. `RScript Gendering_clean.R`
-    2. `python Use_NamSor_GenderAPI.py "<GENDER_API_KEY>" "<NAM_SOR_API_KEY"`
+    1. Install necessary libraries for Python and R
+        1. Python dependencies detailed in requirements.txt
+        2. R dependencies: 'stringr', 'dplyr', 'GenderGuesser', 'gender'
+    3. `RScript Gendering_clean.R`
+    4. `python Use_NamSor_GenderAPI.py "<GENDER_API_KEY>" "<NAM_SOR_API_KEY"`
         1. Make sure you have required libraries installed (see requirements.txt)
         2. Recommended: Install and run in a virtual environment
-    2. `RScript Gendering_run.R "<GENDERIZE_API_KEY>"`
+    5. `RScript Gendering_run.R "<GENDERIZE_API_KEY>"`
 5. Hooray! This should have generated final.csv, the resulting gendering. See final_sample.csv.
 
 ## File Details
