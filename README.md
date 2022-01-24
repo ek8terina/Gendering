@@ -9,8 +9,9 @@ In order to run, you will need the following:
 
 ## Quickstart: How to Run
 1. Clone or download this repo to local machine
-2. Replace ".gender_this.csv" with desired data
-    1. Follow the format used in that csv including file name and column names
+2. Replace "gender_this.csv" with desired data
+    1. Follow the format of names_format.csv
+    2. Use the name "gender_this.csv"!
 3. Open terminal at the /Gendering/ folder
 4. Run the following (replace <API_KEY>):
     1. `RScript Gendering_clean.R`
@@ -18,7 +19,7 @@ In order to run, you will need the following:
         1. Make sure you have required libraries installed (see requirements.txt)
         2. Recommended: Install and run in a virtual environment
     2. `RScript Gendering_run.R "<GENDERIZE_API_KEY>"`
-5. Hooray! This should have generated final.csv, the resulting gendering.
+5. Hooray! This should have generated final.csv, the resulting gendering. See final_sample.csv.
 
 ## File Details
 ...
