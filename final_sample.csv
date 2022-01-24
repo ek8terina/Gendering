@@ -1,0 +1,4 @@
+"","firstName","secondName","surName","accuracy","samples","gender","gender75","gender8","gender9","gender95","source"
+"1","Klara","Jane","Smith",100,1e+05,"female","female","female","female","female","genderize.io"
+"2","Anna",NA,"Smith",98,184558,"female","female","female","female","female","genderAPI"
+"3","Kate",NA,"Smith",98,27239,"female","female","female","female","female","genderAPI"
