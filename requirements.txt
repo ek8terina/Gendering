@@ -1,0 +1,8 @@
+###### Requirements without Version Specifiers ######
+pandas
+sys
+openapi_client
+csv
+re
+urllib.request
+json
