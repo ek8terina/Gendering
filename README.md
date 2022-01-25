@@ -46,12 +46,16 @@ A sample of the results output is in "final_sample.csv". The final CSV output in
 11. source (the API/package whose results were chosen. See "Gendering.R" function `create_final(namSor, genderAPI, gender, genderize)` for full details on selection process. The final prediction chosen is roughly the best accuracy and highest samples w/ some preference towards certain APIs that are expected to be more accurate. See [Comparison and benchmark of name-to-gender services](https://peerj.com/articles/cs-156/) from Lucia Santamaria and Mihaljevic. 
 
 ## Details about Gender Services
-This repository combines the results from four different services. They are as follows. Find more details and buy credits + API Keys on Gender Services websites.
+This repository combines the results from four different services. They are as follows. Find more details and buy credits + API Keys on Gender Services websites. There is currently no function to use fewer than all four of these services in this Repo, but "Gendering.R" contains functions `use_<service>(params)`, `create_df_<service>(params)`, and more formatting functions that can produce desired output if modified and run individually.
 ### Gender API
 See website [here](https://gender-api.com/)
+An API Key and credits are needed to use Gender API name-to-gender inference, these can be purchased through their website. If using this Gendering repo, be sure to us an API Key with access to enough credits for the size of the CSV. The count of name-to-gender calls used is `# of valid first_name + # of valid second_name` in the selected CSV. Values like NA or " " are not evaluated and not charged as credits.
 ### NamSor
 See website [here](https://namsor.app/)
+An API Key and credits are needed to use NamSor name-to-gender inference, these can be purchased through their website. If using this Gendering repo, be sure to us an API Key with access to enough credits for the size of the CSV. The count of name-to-gender calls used is `# of valid first_name + # of valid second_name` in the selected CSV. Values like NA or " " are not evaluated and not charged as credits.
 ### Genderize.io
 See website [here](https://genderize.io/)
+An API Key and credits are needed to use Genderize.io name-to-gender inference, these can be purchased through their website. If using this Gendering repo, be sure to us an API Key with access to enough credits for the size of the CSV. The count of name-to-gender calls used is `# of valid first_name + # of valid second_name` in the selected CSV. Values like NA or " " are not evaluated and not charged as credits.
 ### Gender R Package
 Find documentation on [cran](https://cran.r-project.org/web/packages/gender/index.html)
+Gender R package is unique between these four in that it is an installable R package that does not require calls to a credit-based API. No sign-up or API Key is necessary.
