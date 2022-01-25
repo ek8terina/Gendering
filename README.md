@@ -29,10 +29,21 @@ In order to run, you will need the following:
 1. "GenderAPI.py","NamSor.py", and "Use_NamSor_GenderAPI.py" include python code to access the Gender API and NamSor API. See "requirements.txt" for Python dependencies
 2. "Gendering.R", "Gendering_clean.R", and "Gendering_run.R" include R script to access Genderize.io and the Gender R package as well as clean the .csv and format + output the final file
 ### Other
-This repo includes some csvs as samples to run the code as is and for formatting examples. "final_sample.csv" is an example of the output created by running the Quickstart, "names_format.csv" is the sample format input csvs MUST follow. "gender_this.csv" is the sample data the code will run on automatically, replace with desired data and follow Quickstart instructions.
+This repo includes some csvs as samples to run the code as is and for formatting examples. "final_sample.csv" is an example of the output created by running the Quickstart, "names_format.csv" is the sample format input csvs MUST follow. "gender_this.csv" is the sample data the code will run on automatically, replace with desired data and follow [Quickstart](##heading-1 "Goto quickstart") instructions.
 
 ## Results
-...
+A sample of the results output is in "final_sample.csv". The final CSV output includes the following
+1. firstName
+2. secondName
+3. surName
+4. accuracy
+5. samples
+6. gender (no threshold)
+7. gender75 (threshold at .75 predicted accuracy)
+8. gender8 (threshold at .8 predicted accuracy)
+9. gender9 (threshold at .9 predicted accuracy)
+10. gender95 (threshold at .95 predicted accuracy)
+11. source (the API/package whose results were chosen. See "Gendering.R" function `create_final(namSor, genderAPI, gender, genderize)` for full details on selection process. The final prediction chosen is roughly the best accuracy and highest samples w/ some preference towards certain APIs that are expected to be more accurate. See [Comparison and benchmark of name-to-gender services](https://peerj.com/articles/cs-156/) from Lucia Santamaria and Mihaljevic. 
 
 ## Details about Gender Services
 This repository combines the results from four different services. They are as follows. Find more details on Gender Services websites.
