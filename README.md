@@ -46,12 +46,12 @@ A sample of the results output is in "final_sample.csv". The final CSV output in
 11. source (the API/package whose results were chosen. See "Gendering.R" function `create_final(namSor, genderAPI, gender, genderize)` for full details on selection process. The final prediction chosen is roughly the best accuracy and highest samples w/ some preference towards certain APIs that are expected to be more accurate. See [Comparison and benchmark of name-to-gender services](https://peerj.com/articles/cs-156/) from Lucia Santamaria and Mihaljevic. 
 
 ## Details about Gender Services
-This repository combines the results from four different services. They are as follows. Find more details on Gender Services websites.
+This repository combines the results from four different services. They are as follows. Find more details and buy credits + API Keys on Gender Services websites.
 ### Gender API
-...
+See website [here](https://gender-api.com/)
 ### NamSor
-...
+See website [here](https://namsor.app/)
 ### Genderize.io
-...
+See website [here](https://genderize.io/)
 ### Gender R Package
-...
+Find documentation on [cran](https://cran.r-project.org/web/packages/gender/index.html)
