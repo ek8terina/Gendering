@@ -25,7 +25,11 @@ In order to run, you will need the following:
 5. Hooray! This should have generated final.csv, the resulting gendering. See final_sample.csv.
 
 ## File Details
-...
+### Code
+1. "GenderAPI.py","NamSor.py", and "Use_NamSor_GenderAPI.py" include python code to access the Gender API and NamSor API. See "requirements.txt" for Python dependencies
+2. "Gendering.R", "Gendering_clean.R", and "Gendering_run.R" include R script to access Genderize.io and the Gender R package as well as clean the .csv and format + output the final file
+### Other
+This repo includes some csvs as samples to run the code as is and for formatting examples. "final_sample.csv" is an example of the output created by running the Quickstart, "names_format.csv" is the sample format input csvs MUST follow. "gender_this.csv" is the sample data the code will run on automatically, replace with desired data and follow Quickstart instructions.
 
 ## Results
 ...
