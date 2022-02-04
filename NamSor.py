@@ -62,6 +62,15 @@ def use_namSor(key, authors, savename):
                                 'probability': "NA",
                                 'genderScale': "NA",
                                 'score': "NA"})
+            except UnicodeEncodeError:
+                print("Unicode error")
+                dict_data.append({'ArticleID': authors['ArticleID'][id],
+                                'name': first_name,
+                                'surname': last_name,
+                                'gender': "NA",
+                                'probability': "NA",
+                                'genderScale': "NA",
+                                'score': "NA"})
         else:
             dict_data.append({'ArticleID': authors['ArticleID'][id],
                             'name': first_name,
@@ -82,23 +91,3 @@ def use_namSor(key, authors, savename):
                 writer.writerow(data)
     except IOError:
         print("I/O error")
-
-
-# Getting status of API after using key
-# create an instance of the API class
-"""""
-api_instance = openapi_client.AdminApi(openapi_client.ApiClient(configuration))
-
-try:
-    # Prints the current status of the classifiers.
-    api_response = api_instance.api_usage()
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling AdminApi->api_usage: %s\n" % e)
-"""""
-
-# try:
-# Activate/deactivate anonymization for a source.
-#    api_instance.anonymize(source, anonymized)
-# except ApiException as e:
-#    print("Exception when calling AdminApi->anonymize: %s\n" % e)
