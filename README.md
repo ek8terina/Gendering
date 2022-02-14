@@ -6,6 +6,7 @@ In order to run, you will need the following:
 2. Gender API Key (and credits)
 3. NamSor API Key (and credits)
 4. Genderize.io Key (and credits)
+5. Python and R to run from command line
 
 ## Quickstart: How to Run
 1. Clone or download this repo to local machine
@@ -24,6 +25,8 @@ In order to run, you will need the following:
     5. `RScript Gendering_run.R "<GENDERIZE_API_KEY>"`
 5. Hooray! This should have generated final.csv, the resulting gendering. See final_sample.csv.
 
+Note: NamSor, GenderAPI, and Genderize.io may take some time to run across many observations. Recommended: create a .sh file and run in a compute cluster if possible.
+
 ## File Details
 ### Code
 1. "GenderAPI.py","NamSor.py", and "Use_NamSor_GenderAPI.py" include python code to access the Gender API and NamSor API. See "requirements.txt" for Python dependencies
@@ -32,7 +35,7 @@ In order to run, you will need the following:
 This repo includes some csvs as samples to run the code as is and for formatting examples. "final_sample.csv" is an example of the output created by running the Quickstart, "names_format.csv" is the sample format input csvs MUST follow. "gender_this.csv" is the sample data the code will run on automatically, replace with desired data and follow [Quickstart](##heading-1 "Goto quickstart") instructions.
 
 ## Results
-A sample of the results output is in "final_sample.csv". The final CSV output includes the following
+A sample of the results output is in "final_sample.csv". The final CSV output includes the following:
 1. firstName
 2. secondName
 3. surName
